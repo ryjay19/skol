@@ -1,6 +1,7 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cupcake ni Bogart</title>
 	<style type="text/css">
 		body{
@@ -240,6 +241,20 @@
 		table {
 			margin: 0 auto;
 		}
+		.vanp, .chocp, .strawberryp, .cusp, .designedp, .accp {
+			display: none;
+		}
+		.vanp.active, .chocp.active, .strawberryp.active, .cusp.active, .designedp.active, .accp.active {
+			display: block;
+			background-color: white;
+		}
+		.vanp {
+			width: 800px;
+			height: 800px;
+			transform: translate(200%, 100%);
+			background-color: white;
+			border-radius: 20px;
+		}								
 		</style>
 </head>
 <body> 
@@ -264,31 +279,38 @@
 		<h1>MENU</h1>
 		<a href="#home"><button>BACK TO TOP</button></a>
 		<a href="#about"><button>NEXT</button></a>
+		<div class="vanp"></div>
+		<div class="chocp"></div>
+		<div class="strawberryp"></div>
+		<div class="cusp"></div>
+		<div class="designedp"></div>
+		<div class="accp"></div>
 		<table>
 			
 			<tr>
-				<td><img src="https://bakesbybrownsugar.com/wp-content/uploads/2022/12/Vanilla-Cupcakes-12.jpg" class="van"></td>
-				<td><img src="https://sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg" class="choc"></td>
-				<td><img src="https://preppykitchen.com/wp-content/uploads/2022/07/Strawberry-Cupcakes-Feature.jpg" class="strawberry"></td>
+				<td><img src="https://bakesbybrownsugar.com/wp-content/uploads/2022/12/Vanilla-Cupcakes-12.jpg" class="van" id="van"></td>
+				<td><img src="https://sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg" class="choc" id="choc"></td>
+				<td><img src="https://preppykitchen.com/wp-content/uploads/2022/07/Strawberry-Cupcakes-Feature.jpg" class="strawberry" id="strawberry"></td>
 			</tr>
 			<tr class="l1">
-				<td><h3 class="vl">Vanilla Cupcakes →</h3></td>
-				<td><h3 class="cl">Chocolate Cupcakes →</h3></td>
-				<td><h3 class="sl">Strawberry Cupcakes →</h3></td>
+				<td><h3 id="van" class="vl">Vanilla Cupcakes →</h3></td>
+				<td><h3 id="choc" class="cl">Chocolate Cupcakes →</h3></td>
+				<td><h3 id="strawberry" class="sl">Strawberry Cupcakes →</h3></td>
 			</tr>
 				<br>
 			<tr>
-				<td><img src="https://cupcakelabph.com/cdn/shop/products/71-Monogram_Cupcakes_540x.png?v=1647831740" class="cus"></td>
-				<td><img src="https://cakesandmemories.com/cdn/shop/products/avengers-cupcakes-505-758258.jpg?v=1750483646" class="designed"></td>
-				<td><img src="https://sweetmamita.ph/cdn/shop/files/2_20231029_151515_0001.png?v=1724652885" class="acc"></td>
+				<td><img src="https://cupcakelabph.com/cdn/shop/products/71-Monogram_Cupcakes_540x.png?v=1647831740" class="cus" id="cus"></td>
+				<td><img src="https://cakesandmemories.com/cdn/shop/products/avengers-cupcakes-505-758258.jpg?v=1750483646" class="designed" id="designed"></td>
+				<td><img src="https://sweetmamita.ph/cdn/shop/files/2_20231029_151515_0001.png?v=1724652885" class="acc" id="acc"></td>
 			</tr>
 			<tr class="l1">
-				<td><h3 class="csl">Customized Cupcakes →</h3></td>
-				<td><h3 class="dl">Designed Cupcakes →</h3></td>
-				<td><h3 class="al">Accessories →</h3></td>
+				<td><h3 id="cus" class="csl">Customized Cupcakes →</h3></td>
+				<td><h3 id="designed" class="dl">Designed Cupcakes →</h3></td>
+				<td><h3 id="acc" class="al">Accessories →</h3></td>
 			</tr>
 		
 		</table>
+		
 </div>
 		<div class="#about" id="about">
 		<h1>ABOUT US</h1>
@@ -301,7 +323,7 @@ Our story began with a simple dream: to create cupcakes that are as beautiful as
 <br>
 
 <br>
-But we don't just stop at taste! Our team of bakers is constantly experimenting with new flavors and creative designs to keep things exciting. Whether it’s a classic flavor like Chocolate Ganache, a fruity twist like Lemon Raspberry, or something whimsical like our signature Unicorn Swirl, there’s always something new to try. And for our gluten-free, dairy-free, or vegan customers, we offer options that ensure no one has to miss out on the fun.
+But we don't just stop at taste! Our team of bakers is constantly experimenting with new flavors and creative designs to keep things exciting. Whether it's a classic flavor like Chocolate Ganache, a fruity twist like Lemon Raspberry, or something whimsical like our signature Unicorn Swirl, there’s always something new to try. And for our gluten-free, dairy-free, or vegan customers, we offer options that ensure no one has to miss out on the fun.
 <br>
 
 <br>
@@ -317,10 +339,10 @@ We invite you to visit our shop and experience the warmth and joy that comes fro
 <br>
 Thank you for being a part of our journey. We’re so grateful for your support, and we look forward to sharing many more cupcakes with you in the future!</h4>
 
-<img src="https://media.tenor.com/Vnf7YMQgQywAAAAm/tension.webp" class="fb">
-<img src="https://play-lh.googleusercontent.com/A-Rnrh0J7iKmABskTonqFAANRLGTGUg_nuE4PEMYwJavL3nPt5uWsU2WO_DSgV_mOOM" class="x">
-<img src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM" class="ig">
-<img src="https://play-lh.googleusercontent.com/Ui_-OW6UJI147ySDX9guWWDiCPSq1vtxoC-xG17BU2FpU0Fi6qkWwuLdpddmT9fqrA" class="t">
+<a href="https://www.facebook.com/ryanjoshua.bianzon.7 " target="_blank"><img src="https://media.tenor.com/Vnf7YMQgQywAAAAm/tension.webp" class="fb"></a>
+<a href="https://x.com/ryanj533029" target="_blank"><img src="https://play-lh.googleusercontent.com/A-Rnrh0J7iKmABskTonqFAANRLGTGUg_nuE4PEMYwJavL3nPt5uWsU2WO_DSgV_mOOM" class="x"></a>
+<a href="https://www.instagram.com/ryjay._/" target="_blank"><img src="https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM" class="ig"></a>
+<a href="https://www.tiktok.com/@ryjay_19" target="_blank"><img src="https://play-lh.googleusercontent.com/Ui_-OW6UJI147ySDX9guWWDiCPSq1vtxoC-xG17BU2FpU0Fi6qkWwuLdpddmT9fqrA" class="t"></a>
 <div class="con">
 <h3>CONTACT US</h3>
 <h4>cupcakenibogart@gmail.com</h4>
@@ -332,7 +354,27 @@ Thank you for being a part of our journey. We’re so grateful for your support,
 		<div class="btt"><a href="#home"><button>BACK TO TOP</button></a></div>
 		<a href="https://www.google.com/maps/place/PARA%C3%91AQUE+NATIONAL+HIGH+SCHOOL+-+MAIN/@14.4798826,120.9989828,16z/data=!4m6!3m5!1s0x3397ce7cb3ac9c23:0x772746fd04a3f730!8m2!3d14.479429!4d120.998694!16s%2Fm%2F0j9l4p5?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D"><img src="https://appassets.mvtdev.com/map/41/s/1022/9870311.webp">
 		<h3>8155 Dr Arcadio Santos Ave, Parañaque, 1700 Metro Manila</h3></a>
-
+		
 	</div>
+
+<script>
+	const show = document.getElementById("show");
+	const backbtn = document.getElementById("back");
+    const flavors = [
+        { id: "van", name: "Vanilla Cupcakes" },
+        { id: "choc", name: "Chocolate Cupcakes" },
+        { id: "strawberry", name: "Strawberry Cupcakes" },
+        { id: "cus", name: "Customized Cupcakes" },
+        { id: "designed", name: "Designed Cupcakes" },
+        { id: "acc", name: "Accessories" }
+    ];
+
+    flavors.forEach(flavor => {
+        document.getElementById(flavor.id).addEventListener("click", () => {
+            add.classList.active = true;
+        });
+    });
+</script>
+
 </body>
 </html>
