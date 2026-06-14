@@ -9,6 +9,12 @@
 		background-size: cover;
 		background-attachment: no-repeat;
 		background-attachment: fixed;
+		overflow-x:	hidden; 
+		}
+		body::-webkit-scrollbar {
+			display: none;
+			scrollbar-width: none;
+		-ms-overflow-style: none;
 		}
 		h1{
 		background-color: pink;
@@ -57,8 +63,9 @@
 		.baba {
 			background-color: pink;
 			text-align: center;
+			margin-left: -999px;
+			margin-right: -999px;
 			padding: 10px;
-			margin: -8px;
 			margin-top: 370px;
 			font-size: 35px;
 		}
