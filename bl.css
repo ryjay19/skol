@@ -1,0 +1,16 @@
+.gw{
+    color: blue; 
+}
+.tnp{
+    color: rgb(101, 73, 33);
+}
+.gc{
+    color: gold;
+}
+h3{
+    font-family: lucida handwriting;
+}
+body{
+    overflow-y:hidden;
+    margin-top: -5px;
+}
